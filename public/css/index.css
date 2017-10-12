@@ -1,5 +1,51 @@
-#indexBack{
+.boxBack{
     background-image: url(/images/OregonTrail.jpg);
     height: 100%;
     width: 100%;
+    font: bold 35pt serif;
+
+
 }
+#continueClick{
+    font-family: serif;
+}
+
+#introText{
+    padding-top: 225px;
+    padding-left: 200px;
+    padding-right: 550px;
+    text-align: center;
+}
+
+#spacebarText{
+    font: bold 20pt serif;
+    padding-top: 25px;
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+
