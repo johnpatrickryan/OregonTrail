@@ -1,13 +1,77 @@
 body{
-    width: 1160px;
-    height: 720px;
+
+}
+
+.boxback{
+    background-color: black;
+    height: 720px;    
+    width: 1200px;
     display: block;
     margin: auto;
     margin-top: 100px;
      
 }
 
-.boxback{
-        background-color: black;
+.leftCol{
+    width: 20%;
+    float: left;
+    height: 100%;
+}
 
+.rightCol{
+    width: 20%;
+    float: right;
+    height: 100%;
+}
+
+.midCol {
+    width: 60%;
+    margin-top: 50px;
+    display: inline-block;
+    color: tan;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 50px;
+    text-align: center;
+}
+
+.midTitle{
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.menuOptions{
+    font-size: 28px;
+    margin-top: 80px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+
+
+.blinkingText{
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+    
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
 }
