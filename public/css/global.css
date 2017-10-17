@@ -3,7 +3,8 @@ body{
 }
 
 .boxback{
-    background-color: black;
+    background-image: url(/images/OregonTrail.jpg);
+
     height: 720px;    
     width: 1200px;
     display: block;
@@ -25,8 +26,10 @@ body{
 }
 
 .midCol {
+    background-color: black;
     width: 60%;
-    margin-top: 50px;
+    height: 670px;
+    padding-top: 50px;
     display: inline-block;
     color: tan;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
@@ -43,7 +46,7 @@ body{
     font-size: 28px;
     margin-top: 80px;
     text-align: left;
-    margin-left: 150px;
+    margin-left: 130px;
 }
 
 
