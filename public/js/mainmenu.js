@@ -6,10 +6,10 @@ sample.play();
 
 document.onkeypress = function(e) {
     if(e.keyCode == 49){
-        window.location.href = "http://148.100.5.112:1337/game"
+        window.location.href = "/game"
     }
     else if(e.keyCode == 51){
-        window.location.href = "http://148.100.5.112:1337/topten"
+        window.location.href = "/topten"
     }
     else if(e.keyCode == 52){
         
