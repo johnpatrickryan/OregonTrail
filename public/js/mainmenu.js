@@ -1,9 +1,3 @@
-var sample = document.getElementById("themeMusic");
-
-sample.play();
-
-
-
 document.onkeypress = function(e) {
     if(e.keyCode == 49){
         window.location.href = "/game"
@@ -12,17 +6,18 @@ document.onkeypress = function(e) {
         window.location.href = "/topten"
     }
     else if(e.keyCode == 52){
-        
-        
-        if(!sample.paused){
-            sample.pause();
-            document.getElementById("soundButt").innerHTML = "ON";
+            var currentSound = sessionStorage.getItem('soundStatus');
+            if (currentSound == "true"){
+                currentSound = "false";
+                document.getElementById("soundButt").innerHTML = "ON";
+            }
+            else{
+                currentSound = "true";
+                document.getElementById("soundButt").innerHTML = "OFF";
+            }
+            console.log(currentSound);
+            sessionStorage.setItem('soundStatus', currentSound);
             
+            checkSound();
         }
-        else{
-            sample.play();
-            document.getElementById("soundButt").innerHTML = "OFF"
-        }
-    }
 } 
-
