@@ -4,12 +4,14 @@ function checkSound(){
     
     var currentSound = sessionStorage.getItem('soundStatus');
     
-    console.log(currentSound);
+    
     if (currentSound == "true"){
         sample.play();
+        document.getElementById("soundButt").innerHTML = "OFF";
     }
     else {
         sample.pause();
+        document.getElementById("soundButt").innerHTML = "ON";
     }
 
 }

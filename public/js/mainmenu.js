@@ -15,7 +15,7 @@ document.onkeypress = function(e) {
                 currentSound = "true";
                 document.getElementById("soundButt").innerHTML = "OFF";
             }
-            console.log(currentSound);
+            
             sessionStorage.setItem('soundStatus', currentSound);
             
             checkSound();
