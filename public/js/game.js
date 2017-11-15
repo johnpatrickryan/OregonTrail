@@ -97,7 +97,7 @@ function gameScreen(screenNumber){
 
 
 function savePlayerNames(playerNames){
-	fetch('/game/savePlayerName/').then(function(response){
+	fetch('/game/savePlayerName/:playerId/:playerName').then(function(response){
 		if(response.status !== 200){
 			console.log('problem with ajax call! ' + response.status + "msg: " + response.value);
 			return;

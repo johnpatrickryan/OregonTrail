@@ -44,7 +44,7 @@ var startGame3 = "<div class=\"midcolgame\">"
 	exports.startGameScreens.push(startGame3);
 
 	var startGame4 = "<div class = \"midcolgame\"><p>Congratulations! You are ready to start your journey on the Oregon Trail!</p>"
-		+ "<p>Take a look at your settings before you begin</p>"
+		+ "<p>Here are the settings you have selected!</p>"
 		+ "<div id=\"leaderName\">Wagon Leader:<div>"
 		+ "<div id=\"memberOne\">Member One:<div>"
 		+ "<div id=\"memberTwo\">Member Two:<div>"
