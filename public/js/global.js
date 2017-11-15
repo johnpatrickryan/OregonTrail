@@ -9,10 +9,10 @@ function checkSound(){
         sample.play();
         document.getElementById("soundButt").innerHTML = "OFF";
     }
-    else {
-        sample.pause();
-        document.getElementById("soundButt").innerHTML = "ON";
-    }
+ //   else {
+  //      sample.pause();
+ //       document.getElementById("soundButt").innerHTML = "ON";
+  //  }
 
 }
 

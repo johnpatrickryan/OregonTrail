@@ -2,3 +2,23 @@
     font-size: 32px;
     margin-top: 60px;
 }
+
+#menuOptions{
+    cursor: pointer;
+}
+
+#monthOptions{
+    cursor: pointer;
+}
+
+#submitBttn{
+    cursor: pointer;
+}
+
+#choice{
+    font-size: 25px;
+}
+
+#leaderLabel{
+    font-size: 30px;
+}
