@@ -53,6 +53,7 @@ var startGame3 = "<div class=\"midcolgame\">"
 		+ "<div id=\"profession\">Profession:<div>"
 		+ "<div id=\"cash\">Cash:<div>"
 		+ "<div id=\"startMonth\">Starting Month:<div></div>"
+        + "<button id=\"starttrail\" type=\"button\"> Start Game</\"button\">"
 
 		exports.startGameScreens.push(startGame4);
 

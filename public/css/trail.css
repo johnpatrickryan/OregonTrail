@@ -1,0 +1,23 @@
+.leftCol{
+    width: 20%;
+    float: left;
+    height: 100%;
+}
+
+.rightCol{
+    width: 20%;
+    float: right;
+    height: 100%;
+}
+
+.midCol {
+    background-color: black;
+    width: 60%;
+    height: 670px;
+    padding-top: 50px;
+    display: inline-block;
+    color: tan;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 50px;
+    text-align: center;
+}

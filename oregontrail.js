@@ -16,6 +16,10 @@ app.get('/game', function(req, res){
 	res.sendFile('views/game.html', {root: __dirname})
 })
 
+app.get('/trail', function(req, res){
+	res.sendFile('/views/trail.html', {root: __dirname})
+})
+
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
@@ -32,35 +36,39 @@ app.get('/game/getNewGameScreen/:screenId', function(req, res) {
     res.send(gameScreen);
 })
 
+
+
+
+
 app.get('/game/saveProfession/:profession', function(req, res){
-	
+	var gameScreen = game.startGameScreens[req.params.profession];
 	var profession = req.params.profession;
 	game.newData.profession = req.params.profession;
 	res.setHeader('Content_Type', 'text/html');
+    res.send(game.newData.profession);
 })
 
 
 app.get('/game/savePlayerName/:playerId/:playerName', function(req, res){
 
-	var gameScreen = game.startGameScreens[req.params.playerId] = req.params.playerName;
+	game.newData.playerName[req.params.playerId] = req.params.playerName;
 
 	res.setHeader('Content_Type', 'text/html');
-	res.send(gameScreen);
+	res.send(game.newData.playerName);
 })
 
 
 app.get('/game/saveStartMonth/:startMonth', function(req, res){
 
 	var gameScreen = game.startGameScreens[req.params.startMonth];
-
+    var startMonth = req.params.startMonth;
+    game.newData.startMonth = req.params.startMonth;
 	res.setHeader('Content_Type', 'text/html');
 	res.send(gameScreen);
 })
 
 
 app.get('/game/getSettings', function(req, res){
-
-	var gameScreen = game.startGameScreens[req.params.getSettings];
 
 	res.setHeader('Content_Type', 'text/html');
 	res.send(gameScreen);

@@ -137,6 +137,10 @@ function saveStartMonth(startMonth){
 	})
 }
 
+document.getElementById("Starttrail").onclick = function() {
+    window.location.href = "/trail";
+}
+
 function populateSettings(settings){
 	document.getElementById('leaderName').innerHTML = settings.playerNames[0];
 	document.getElementById('memberOne').innerHTML = settings.playerNames[1];
