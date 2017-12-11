@@ -65,3 +65,38 @@ var startGame3 = "<div class=\"midcolgame\">"
 		}
 
 		exports.newData;
+
+
+
+var plainsScreen = "<div class=\"background\"><img src=\"/images/grasslands.jpg\" alt=\"background\"></div>";
+
+ //   exports.startTrailScreens.push(plainsScreen);
+
+
+var forestScreen = "<div class=\"banner\"><img src=\"/images/forest.png\" alt=\"Banner\"></div>";
+
+ //   exports.startTrailScreens.push(forestScreen);
+
+
+var desertScreen = "<div class=\"banner\"><img src=\"/images/desert.jpg\" alt=\"Banner\"></div>";
+
+ //   exports.startTrailScreens.push(desertScreen);
+
+
+var mountainScreen = "<div class=\"banner\"><img src=\"/images/mountains.jpg\" alt=\"Banner\"></div>";
+
+  //  exports.startTrailScreens.push(mountainScreen);
+
+
+
+function trailStats(){
+    this.health = 100;
+    this.currentWeather = "Warm";
+    this.distance = 0;
+    this.daysTraveled = 0;
+    this.currentPace = "Resting";
+    this.membersLeft = 5;
+    this.currentTerrain = "Grasslands";
+}
+
+exports.trailStats = new trailStats();

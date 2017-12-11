@@ -72,6 +72,14 @@ gameContainer.addEventListener('click', function(e){
 			saveStartMonth("July");
 		}
 	}
+    
+    if(screenNumber == 3){
+        if(e.target.id == "starttrail"){
+			window.location.href = "/trail"
+			gameScreen(screenNumber);
+		}
+    }
+    
 })
 
 
@@ -137,9 +145,7 @@ function saveStartMonth(startMonth){
 	})
 }
 
-document.getElementById("Starttrail").onclick = function() {
-    window.location.href = "/trail";
-}
+
 
 function populateSettings(settings){
 	document.getElementById('leaderName').innerHTML = settings.playerNames[0];
