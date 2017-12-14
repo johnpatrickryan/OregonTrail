@@ -10,6 +10,21 @@ function getStats(data){
 	})	
 }
 
+
+function saveCurrentWeather(currentWeather){
+	fetch('/game/saveCurrentWeather/').then(function(response){
+		if(response.status !== 200){
+			console.log('problem with ajax call! ' + response.status + "msg: " + response.value);
+			return;
+		}
+
+		response.text().then(function(data){
+			trailContainer.innerHTML = data;
+		})		
+	})
+}
+
+
 function showStats(trailStats){
 	console.log('populateStats');
 	document.getElementById('health').innerHTML = trailStats.health;
@@ -27,37 +42,37 @@ function changeWeather(){
     var weatherchance = (math.floor(math.random() * 100) +1)
     
     if (weatherchance > 0 && weatherchance < 11){
-        weather = very hot
+        saveCurrentWeather("very hot");
     }
     else if (weatherchance > 10 && weatherchance < 21){
-        weather = hot
+        saveCurrentWeather("hot");
     }
     else if (weatherchance > 20 && weatherchance < 31){
-        weather = cool
+        saveCurrentWeather("cool");
     }
     else if (weatherchance > 30 && weatherchance < 41){
-        weather = cold
+        saveCurrentWeather("cold");
     }
     else if (weatherchance > 40 && weatherchance < 51){
-        weather = very cold
+        saveCurrentWeather("very cold");
     }
     else if (weatherchance > 50 && weatherchance < 61){
-        weather = rain
+        saveCurrentWeather("rain");
     }
     else if (weatherchance > 60 && weatherchance < 81){
-        weather  = warm
+       saveCurrentWeather("warm");
     }
     else if (weatherchance > 80 && weatherchance < 86){
-        weather  = heavy rain
+        saveCurrentWeather("heavy rain");
     }
     else if (weatherchance > 85 && weatherchance < 91){
-        weather  = snow
+        saveCurrentWeather("snow");
     }
     else if (weatherchance > 90 && weatherchance < 96){
-        weather  = blizzard
+        saveCurrentWeather("blizzard");
     }
     else (weatherchance > 95 && weatherchance < 101){
-        weather  = heavy fog
+        saveCurrentWeather("heavy fog");
     }
     
     
